@@ -2,25 +2,32 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Contact from './components/Contact'
+import Navbar from './components/Navbar'
 import data from "./data"
 
 export default function App() {
+  
   const cards = data.map(item => {
     return (
             
               <Contact 
+                  key={item.id}
                   img={item.img}
                   name={item.name}
                   phone={item.phone}
                   email={item.email}
+                  openSpots = {item.openSpots}
                   />
            
     )
   })
   return(
-    <div className='contacts'>
-      {cards}
+    <div className='container'>
+      <Navbar/>
+      <div className='contacts'>
+        {cards}
       </div>
+        </div>
 
   )
 }

@@ -1,11 +1,9 @@
 import React from "react";
 
 export default function Contact(props) {
-
-
     return (
         <div className="contact-card">
-            
+            <div className="card-badge">SOLD OUT</div>
             <img src={props.img}/>
             <h3>{props.name}</h3>
             <div className="info-group">
@@ -16,6 +14,7 @@ export default function Contact(props) {
                 <img src="./images/mail-icon.png" />
                 <p>{props.email}</p>
                 <p>{props.age}</p>
+                
             </div>
     </div>
     )

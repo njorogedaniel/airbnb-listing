@@ -1,32 +1,37 @@
 export default [
     {
-    
-        img:"./images/1.jpg",
-        name:"Mr. Whiskerson",
+        id:0,
+        img:"./images/bnb1.jpg",
+        name:"Roysambu",
         phone:"(212) 555-1234",
-        email:"mr.whiskaz@catnap.meow"
+        email:"mr.whiskaz@catnap.meow",
+        openSpots:0
+
     },
     {   
-        
-        img:"./images/2.jpg",
-        name:"Fluffykins",
+        id:1,
+        img:"./images/bnb2.jpg",
+        name:"Karen",
         phone:"(212) 555-2345",
-        email:"fluff@me.com"
+        email:"fluff@me.com",
+        openSpots:4
     },
     {
-        
-        img:"./images/3.jpg",
-        name:"Felix",
+        id:2,
+        img:"./images/bnb3.jpg",
+        name:"Kilimani",
         phone:"(212) 555-4567",
-        email:"thecat@hotmail.com"
+        email:"thecat@hotmail.com",
+        openSpots:3
     },
     {
-    
-        img:"./images/4.jpg",
-        name:"Pumpkin",
+        id:3,
+        img:"./images/bnb4.jpg",
+        name:"Garden Estate",
         phone:"(0800) CAT KING",
         email:"pumpkin@scrimba.com",
-        age:"23"
+        openSpots:2
+
     }
 
 ]
