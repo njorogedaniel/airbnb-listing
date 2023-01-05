@@ -40,6 +40,17 @@ export default [
         status:1,
         cost:"From Kshs.20,000"
 
+    },
+    {
+        id:4,
+        img:"./images/bnb5.jpg",
+        name:"Naivasha",
+        phone:"((+254) 702 166 852",
+        email:"dnjoroge.muiruri@gmail.com",
+        openSpots:0,
+        status:0,
+        cost:"From Kshs.80,000"
+
     }
 
 ]
