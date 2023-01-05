@@ -1,9 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Contact from './components/Contact'
+import Contact from './components/Property'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
 import data from "./data"
+
+
 
 export default function App() {
   
@@ -12,58 +16,31 @@ export default function App() {
             
               <Contact 
                   key={item.id}
-                  img={item.img}
-                  name={item.name}
-                  phone={item.phone}
-                  email={item.email}
-                  openSpots = {item.openSpots}
+                  item={item}    //Passing data to the Contact component by declaring item explicitly or using 
+                  //the spread operator ie {...item} or as shown below
+                  
+                  // img={item.img}
+                  // name={item.name}
+                  // phone={item.phone}
+                  // email={item.email}
+                  // openSpots = {item.openSpots}
                   />
            
     )
   })
   return(
     <div className='container'>
-      <Navbar/>
-      <div className='contacts'>
-        {cards}
-      </div>
-        </div>
-
+        <Navbar/>
+        <Hero />
+          <div className='contacts'>
+            {cards}
+          </div>
+        <Footer />
+    </div>
   )
 }
 
   
 
- 
 
-    
-    // 
-        
-          /* <Contact 
-              img="./images/1.jpg"
-              name="Mr. Whiskerson"
-              phone="(212) 555-1234"
-              email="mr.whiskaz@catnap.meow"
-            />
-          <Contact 
-              img="./images/2.jpg"
-              name="Fluffykins"
-              phone="(212) 555-2345"
-              email="fluff@me.com"
-          />
-          <Contact 
-            img="./images/3.jpg"
-            name="Felix"
-            phone="(212) 555-4567"
-            email="thecat@hotmail.com"
-          />
-          <Contact 
-            img="./images/4.jpg"
-            name="Pumpkin"
-            phone="(0800) CAT KING"
-            email="pumpkin@scrimba.com"
-            age="23"
-          /> */
-          
-    // </div>
 
