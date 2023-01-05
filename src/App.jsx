@@ -25,7 +25,7 @@ export default function App() {
                   // email={item.email}
                   // openSpots = {item.openSpots}
                   />
-           
+                  
     )
   })
   return(
