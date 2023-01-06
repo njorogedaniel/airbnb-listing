@@ -6,14 +6,14 @@ export default function Property(props) {
     if(props.item.openSpots === 0) {
         badgeText = <div className="white">SOLD OUT</div>
     } 
-    else if(props.item.status !== 0){
+     else {
         badgeText  = <div className="green">AVAILABLE</div>
     }
     
 
 
     return (
-        <div className="contact-card">
+        <div className="property-card">
             <div className="card-badge">{badgeText}</div>
             <img src={props.item.img}/>
             <h3>{props.item.name}</h3>

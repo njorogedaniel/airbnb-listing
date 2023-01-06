@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../App"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "airbnb-project"
+	}
+}

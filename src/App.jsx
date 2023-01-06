@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import data from "./data"
+import Property from './components/Property'
 
 
 
@@ -14,9 +15,9 @@ export default function App() {
   const cards = data.map(item => {
     return (
             
-              <Contact 
+              <Property 
                   key={item.id}
-                  item={item}    //Passing data to the Contact component by declaring item explicitly or using 
+                  item={item}    //Passing data to the Property component by declaring item explicitly or using 
                   //the spread operator ie {...item} or as shown below
                   
                   // img={item.img}
@@ -29,10 +30,10 @@ export default function App() {
     )
   })
   return(
-    <div className='container'>
+    <div>
         <Navbar/>
         <Hero />
-          <div className='contacts'>
+          <div className='properties'>
             {cards}
           </div>
         <Footer />
